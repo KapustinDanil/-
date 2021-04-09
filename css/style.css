@@ -349,15 +349,7 @@ display: none;
     .swiper-slide{
         margin-bottom: 40px;
     }
-    .buttonSubs{
-    display: none;
-    }
-    .video-thumb{
-        height: 200px;
-    }
-    .video-thumb1{
-        height: 200px;
-    }
+
     .slider-buttons{
         display: none;
     }
