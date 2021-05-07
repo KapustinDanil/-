@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,5 +26,13 @@
                 <i class="icon-arrow-right icon-large"><img  src="./images/arrow.png" width="30" height="30" alt="icon-user-autorization" class="icon-user-autorization2"></i></button>
         </p>
     </form>
+    <script>
+        window.onload = function () {
+                var el = document.getElementById('g-recaptcha-response');
+                if (el) {
+                    el.setAttribute('required', 'required');
+                }
+            }
+    </script>
 </body>
 </html>
