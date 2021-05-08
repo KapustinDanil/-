@@ -10,35 +10,35 @@ function Input(){
 let login_ok = false;
 let user_name = "";
 let password = "";
-
 user_name = document.getElementById("login").value;
 password = document.getElementById("password").value;
-if (user_name=="danill5000@yandex.ru" && password=="123456") {
- login_ok = true;
- window.location = "YouTube.html";
-}
-if (user_name=="login2" && password=="pass2") {
+
+var json = $.getJSON("bd.json", function(json) {
+console.log(json[0]["login"]); // this will show the info it in firebug console
+var ivan = json.length;
+ for (let i = 0; i < ivan; i++) {  
+     let a="",b="";
+     a=json[i]["login"];
+     b=json[i]["password"];
+if (user_name==a && password==b) {
  login_ok = true;
  window.location = "YouTube.html";
 }
 
+}
+ 
+});  
 if (login_ok==false) 
 alert("Неверный логин или пароль!");
 }
 
-var childWindow = "https://formspree.io/f/mrgrevqj";
-setTimeout(function () {
-  childWindow.close();
-}, 1);
-
 
 function Registration(){
-    
  window.location = "index.html";
 };
 
 
-var childWindow = "https://formspree.io/f/mrgrevqj";
+/*var childWindow = "https://formspree.io/f/mrgrevqj";
 setTimeout(function () {
   childWindow.close();
-}, 1);
+}, 1);*/
