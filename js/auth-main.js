@@ -25,7 +25,7 @@ if (user_name==a && password==b)
  login_ok = true;
  window.location = "YouTube.html";
 }
- if (login_ok==false) 
+ if (login_ok==false && i==ivan-1) 
 alert("Неверный логин или пароль!");
 }
 });  
