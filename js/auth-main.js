@@ -26,11 +26,11 @@ if (user_name==a && password==b) {
 }
 
 }
- 
-});  
 if (login_ok==false) 
 alert("Неверный логин или пароль!");
 }
+});  
+
 
 
 function Registration(){
