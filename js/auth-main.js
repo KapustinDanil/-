@@ -20,18 +20,17 @@ var ivan = json.length;
      let a="",b="";
      a=json[i]["login"];
      b=json[i]["password"];
-if (user_name==a && password==b) {
+if (user_name==a && password==b) 
+{
  login_ok = true;
  window.location = "YouTube.html";
 }
-
-}
-if (login_ok==false) 
+ if (login_ok==false) 
 alert("Неверный логин или пароль!");
 }
 });  
 
-
+}
 
 function Registration(){
  window.location = "index.html";
